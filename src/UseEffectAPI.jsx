@@ -1,5 +1,6 @@
 import React,{useEffect,useState} from 'react';
 import Loading from './Loading.jsx';
+import { FcApproval } from "react-icons/fc";
 
 const UseEffectAPI = () => {
 
@@ -40,7 +41,7 @@ const UseEffectAPI = () => {
                                 <div className="d-flex align-items-center">
                                     <div className="image"> <img src={curEle.avatar_url} className="rounded" width="155" /></div>
                                         <div className="ml-3 w-100">
-                                            <h4 className="mb-0 mt-0 textLeft">{curEle.login}</h4><span className="textleft">Web Dev</span>
+                                            <h4 className="mb-0 mt-0 textLeft">{curEle.login} <FcApproval/></h4><span className="textleft">{curEle.type}</span>
                                             <div className="p-2 mt-2 bg-primary d-flex justify-content-between rounded text-white stats">
 
                                                 <div className="d-flex flex-column"><span className="articles">Articles</span> <span className="number1">{curEle.id}</span></div>
